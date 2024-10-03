@@ -12,4 +12,3 @@ tugas praktikum prak mobile pertemuan 4
 ![App Screenshot](list_produk.png)
 ![App Screenshot](detail_produk.png)
 ![App Screenshot](edit_produk.png)
-# LabMobile4_AgengPrabaWijaya_F
