@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tokokita/model/produk.dart';
 
+// ignore: must_be_immutable
 class ProdukForm extends StatefulWidget {
   Produk? produk;
-
-  ProdukForm({super.key, this.produk});
+  ProdukForm({Key? key, this.produk}) : super(key: key);
 
   @override
   _ProdukFormState createState() => _ProdukFormState();
@@ -12,10 +12,9 @@ class ProdukForm extends StatefulWidget {
 
 class _ProdukFormState extends State<ProdukForm> {
   final _formKey = GlobalKey<FormState>();
-  final bool _isLoading = false;
-  String judul = "TAMBAH PRODUK AGENG";
+  bool _isLoading = false;
+  String judul = "TAMBAH PRODUK";
   String tombolSubmit = "SIMPAN";
-
   final _kodeProdukTextboxController = TextEditingController();
   final _namaProdukTextboxController = TextEditingController();
   final _hargaProdukTextboxController = TextEditingController();
@@ -26,7 +25,7 @@ class _ProdukFormState extends State<ProdukForm> {
     isUpdate();
   }
 
-  isUpdate() {
+  void isUpdate() {
     if (widget.produk != null) {
       setState(() {
         judul = "UBAH PRODUK";
@@ -117,7 +116,9 @@ class _ProdukFormState extends State<ProdukForm> {
       onPressed: () {
         var validate = _formKey.currentState!.validate();
         if (validate) {
-          // Lakukan proses penyimpanan atau update data produk
+          setState(() {
+            _isLoading = false;
+          });
         }
       },
     );
