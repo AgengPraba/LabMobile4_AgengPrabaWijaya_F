@@ -28,7 +28,7 @@ Dokumentasi tugas praktikum prak mobile pertemuan 5.
 
 ### 1. Proses Registrasi
 
-<p align="center"">
+<p align="center">
   <img src="registrasi.png" alt="Registrasi Screenshot" >
   <img src="registrasi_isi.png" alt="Registrasi_isi Screenshot">
 </p>
@@ -42,8 +42,8 @@ Dokumentasi tugas praktikum prak mobile pertemuan 5.
 - Jika registrasi berhasil, dialog sukses akan muncul, meminta pengguna untuk login.
 - Jika gagal, dialog peringatan akan muncul.
 
-<p>
-  <img src="registrasi_sukses.png" alt="Registrasi Sukses Screenshot" align="center">
+<p align="center">
+  <img src="registrasi_sukses.png" alt="Registrasi Sukses Screenshot">
 </p>
 
 ```
@@ -93,7 +93,7 @@ RegistrasiBloc.registrasi(
    - Jika Gagal: Tampilkan dialog peringatan menggunakan WarningDialog dengan pesan "Login gagal, silahkan coba lagi".
 
 <b>Kondisi saat login berhasil langsung diarahkan menuju halaman produk :</b>
-<p>
+<p align="center">
 <img src="login_sukses.png" alt="Login sukses Screenshot" >
 </p>
 
@@ -276,16 +276,21 @@ onTap: () {
 ### 4. Tambah Produk
 
 Form tambah produk:
-
-  <img src="tambah_produk.png"  align="center"><br/>
+<p align="center"> 
+  <img src="tambah_produk.png"><br/>
+</p>
 
 Form tambah produk yang sudah diisi:
 
-  <img src="tambah_isi" align="center"><br/>
-
+<p align="center"> 
+  <img src="tambah_isi.png"><br/>
+</p>
 
 Produk berhasil ditambahkan dan muncul di halaman list produk:
-<img src="list_produk_tambah.png"  align="center"><br/>
+
+<p align="center"> 
+<img src="list_produk_tambah.png"><br/>
+</p>
 
 #### Penjelasan kode
 ```
@@ -320,11 +325,15 @@ Fitur ini memungkinkan pengguna untuk menambahkan produk baru ke dalam sistem. J
 
 Form ubah produk:
 
-  <img src="edit_produk.png"  align="center"><br/>
+<p align="center"> 
+  <img src="edit_produk.png" />
+</p>
 
 Produk berhasil diubah dan muncul di halaman list produk:
 
-  <img src="list_produk_ubah.png"  align="center"><br/>
+<p align="center"> 
+  <img src="list_produk_ubah.png" />
+</p>
 
 #### Penjelasan kode
 
@@ -362,16 +371,20 @@ ubah() {
 
 Halaman detail produk:
 
-  <img src="detail_produk.png"  align="center"><br/>
+<p align="center"> 
+  <img src="detail_produk.png" >
+</p>
 
 Hapus produk:
-
-  <img src="hapus.png"  align="center"><br/>
+<p align="center"> 
+  <img src="hapus.png">
+</p>
 
 Produk berhasil dihapus:
 
-  <img src="hapus_hasil.png"  align="center"><br/>
-
+<p align="center"> 
+  <img src="hapus_hasil.png">
+</p>
 
 #### Penjelasan kode
 
@@ -420,8 +433,9 @@ void confirmHapus() {
 
 Sidebar logout:
 
-  <img src="logout.png"  align="center"><br/>
-
+<p align="center"> 
+  <img src="logout.png">
+</p>
 
 #### Penjelasan kode
 ```
